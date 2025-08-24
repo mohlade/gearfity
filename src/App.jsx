@@ -669,7 +669,7 @@ function App() {
               <span className="hidden sm:inline">•</span>
               <span>Terms of Service</span>
               <span className="hidden sm:inline">•</span>
-              <span>Contact: hello@gearfify.me</span>
+              <span>Contact: info@gearfify.me</span>
             </div>
             <p className="text-xs text-gray-500">
               Start your service business today - Join the growing community of professionals earning more with Gearfify
