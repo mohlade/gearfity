@@ -308,6 +308,123 @@ function App() {
       image: "📚",
       description: "Personalized tutoring services for all ages and subjects.",
       features: ["Certified Teachers", "All Subjects", "Test Prep", "Online/In-Person"]
+    },
+    {
+      id: 24,
+      title: "Wedding Photography",
+      category: "Event Services",
+      price: "$1,200 - $3,500",
+      rating: 4.9,
+      reviews: 167,
+      location: "Across US",
+      duration: "8-12 hours",
+      image: "📸",
+      description: "Professional wedding photography capturing your special moments.",
+      features: ["Full Day Coverage", "Edited Photos", "Online Gallery", "Print Package"]
+    },
+    {
+      id: 25,
+      title: "Event Cinematography",
+      category: "Event Services",
+      price: "$1,500 - $4,000",
+      rating: 4.8,
+      reviews: 134,
+      location: "Across US",
+      duration: "8-12 hours",
+      image: "🎬",
+      description: "Cinematic video production for weddings and special events.",
+      features: ["4K Recording", "Professional Edit", "Drone Footage", "Highlight Reel"]
+    },
+    {
+      id: 26,
+      title: "Stage Manager",
+      category: "Event Services",
+      price: "$300 - $800",
+      rating: 4.7,
+      reviews: 89,
+      location: "Across US",
+      duration: "4-10 hours",
+      image: "🎭",
+      description: "Professional stage management for events, shows, and productions.",
+      features: ["Event Coordination", "Technical Oversight", "Schedule Management", "Team Leadership"]
+    },
+    {
+      id: 27,
+      title: "Personal Chef Services",
+      category: "Culinary Services",
+      price: "$80 - $200",
+      rating: 4.8,
+      reviews: 203,
+      location: "Across US",
+      duration: "2-4 hours",
+      image: "👨‍🍳",
+      description: "Professional chef services for private dining and meal preparation.",
+      features: ["Custom Menus", "Fresh Ingredients", "Special Diets", "Cleanup Included"]
+    },
+    {
+      id: 28,
+      title: "Custom Baking Services",
+      category: "Culinary Services",
+      price: "$25 - $150",
+      rating: 4.9,
+      reviews: 278,
+      location: "Across US",
+      duration: "2-6 hours",
+      image: "🧁",
+      description: "Professional baking services for special occasions and events.",
+      features: ["Custom Designs", "Fresh Ingredients", "Dietary Options", "Delivery Available"]
+    },
+    {
+      id: 29,
+      title: "Professional Dance Instruction",
+      category: "Entertainment",
+      price: "$40 - $120",
+      rating: 4.7,
+      reviews: 156,
+      location: "Across US",
+      duration: "1-2 hours",
+      image: "💃",
+      description: "Dance lessons and choreography for individuals and groups.",
+      features: ["All Skill Levels", "Various Styles", "Group Classes", "Private Lessons"]
+    },
+    {
+      id: 30,
+      title: "Video Editing Services",
+      category: "Creative Services",
+      price: "$50 - $150",
+      rating: 4.8,
+      reviews: 192,
+      location: "Across US",
+      duration: "2-8 hours",
+      image: "🎞️",
+      description: "Professional video editing for personal and business content.",
+      features: ["Professional Software", "Color Correction", "Audio Sync", "Quick Turnaround"]
+    },
+    {
+      id: 31,
+      title: "Auto Repair & Maintenance",
+      category: "Automotive",
+      price: "$75 - $300",
+      rating: 4.6,
+      reviews: 234,
+      location: "Across US",
+      duration: "1-4 hours",
+      image: "🔧",
+      description: "Professional automotive repair and maintenance services.",
+      features: ["Certified Mechanic", "Quality Parts", "Mobile Service", "Warranty Included"]
+    },
+    {
+      id: 32,
+      title: "Pet Care & Sitting",
+      category: "Pet Services",
+      price: "$20 - $60",
+      rating: 4.9,
+      reviews: 345,
+      location: "Across US",
+      duration: "2-24 hours",
+      image: "🐕",
+      description: "Professional pet care, walking, and sitting services.",
+      features: ["Insured & Bonded", "Regular Updates", "Emergency Contact", "Medication Admin"]
     }
   ];
 
@@ -345,7 +462,7 @@ function App() {
   };
 
   const handleContactClick = (serviceName) => {
-    window.location.href = `mailto:info@gearfity.me?subject=Inquiry about ${serviceName}&body=Hi, I'm interested in learning more about your ${serviceName}. Please contact me with more details.`;
+    window.location.href = `mailto:hello@gearfity.me?subject=Inquiry about ${serviceName}&body=Hi, I'm interested in learning more about your ${serviceName}. Please contact me with more details.`;
   };
 
   const handleSubscribe = () => {
@@ -533,7 +650,7 @@ function App() {
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
                 <div className="flex items-center justify-center mb-2">
                   <Activity className="w-5 h-5 text-emerald-400 mr-2" />
-                  <span className="text-2xl font-bold text-white">23</span>
+                  <span className="text-2xl font-bold text-white">32</span>
                 </div>
                 <p className="text-gray-300 text-xs">Active Services</p>
               </div>
@@ -769,19 +886,69 @@ function App() {
                 </span>
               </div>
               
-              <div className="mb-4">
-                <h4 className="font-semibold mb-2 text-white">Stay Updated</h4>
-                <button
-                  onClick={handleSubscribe}
-                  className={`w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white px-4 py-2 rounded-lg font-semibold hover:from-amber-600 hover:to-orange-600 transition-all transform hover:scale-105 shadow-md hover:shadow-lg flex items-center justify-center gap-2 text-sm ${
-                    isSubscribed ? 'from-emerald-500 to-green-500' : ''
-                  }`}
-                  disabled={isSubscribed}
-                >
-                  <Mail className="w-4 h-4" />
-                  {isSubscribed ? 'Subscribed!' : 'Subscribe for  Updates'}
-                </button>
-                <p className="text-gray-500 text-xs mt-1">Get notified about new service opportunities</p>
+              <div className="mb-6">
+                <div className="bg-gradient-to-r from-slate-800 to-gray-800 rounded-xl p-6 border border-slate-700">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg flex items-center justify-center">
+                      <Mail className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white text-lg">Service Pro Newsletter</h4>
+                      <p className="text-gray-400 text-sm">Join 2,500+ professionals earning more</p>
+                    </div>
+                  </div>
+                  
+                  <div className="mb-4">
+                    <div className="grid grid-cols-1 gap-2 text-sm text-gray-300">
+                      <div className="flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full"></div>
+                        <span>Weekly high-paying job alerts</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 bg-amber-400 rounded-full"></div>
+                        <span>Exclusive weekend opportunities</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
+                        <span>Industry tips & rate guides</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button
+                    onClick={handleSubscribe}
+                    className={`w-full bg-gradient-to-r transition-all duration-300 px-4 py-3 rounded-lg font-semibold shadow-lg transform hover:scale-105 flex items-center justify-center gap-2 text-sm ${
+                      isSubscribed 
+                        ? 'from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600' 
+                        : 'from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 hover:shadow-xl'
+                    }`}
+                    disabled={isSubscribed}
+                  >
+                    {isSubscribed ? (
+                      <>
+                        <div className="w-4 h-4 rounded-full border-2 border-white flex items-center justify-center">
+                          <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+                        </div>
+                        Welcome to Gearfity Pro!
+                      </>
+                    ) : (
+                      <>
+                        <Mail className="w-4 h-4" />
+                        Get Free Job Alerts
+                      </>
+                    )}
+                  </button>
+                  
+                  {isSubscribed && (
+                    <p className="text-emerald-400 text-xs mt-2 text-center animate-pulse">
+                      Check your email for exclusive opportunities!
+                    </p>
+                  )}
+                  
+                  <p className="text-gray-500 text-xs mt-2 text-center">
+                    No spam. Unsubscribe anytime. Avg. 2 emails/week.
+                  </p>
+                </div>
               </div>
             </div>
             
@@ -799,11 +966,11 @@ function App() {
             <div>
               <h4 className="font-semibold mb-4 text-amber-400">Popular Categories</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li>• Painting & Interior Work</li>
-                <li>• Plumbing & Electrical</li>
-                <li>• Home Renovation Projects</li>
-                <li>• Landscaping & Outdoor</li>
-                <li>• Handyman Services</li>
+                <li>• Painting & Home Improvement</li>
+                <li>• Event Services & Photography</li>
+                <li>• Culinary & Catering Services</li>
+                <li>• Pet Care & Personal Services</li>
+                <li>• Creative & Technical Services</li>
               </ul>
             </div>
           </div>
