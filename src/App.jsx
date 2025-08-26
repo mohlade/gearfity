@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, MapPin, Star, Clock, Shield, Mail, Heart, Share2, ChevronDown, ChevronUp, Filter } from 'lucide-react';
+import { Search, MapPin, Star, Clock, Shield, Mail, Heart, Share2, ChevronDown, ChevronUp, Filter, Users, TrendingUp, Award, Activity } from 'lucide-react';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -7,6 +7,7 @@ function App() {
   const [expandedCategories, setExpandedCategories] = useState(new Set(['Painting']));
   const [likedServices, setLikedServices] = useState(new Set());
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isSubscribed, setIsSubscribed] = useState(false);
 
   const services = [
     {
@@ -203,6 +204,110 @@ function App() {
       image: "📦",
       description: "Professional moving services with careful handling of your belongings.",
       features: ["Packing Service", "Insurance Coverage", "Local & Long Distance", "Storage Options"]
+    },
+    {
+      id: 16,
+      title: "Handyman Services",
+      category: "Handyman",
+      price: "$50 - $120",
+      rating: 4.6,
+      reviews: 312,
+      location: "Across US",
+      duration: "1-4 hours",
+      image: "🔨",
+      description: "General repairs, installations, and home maintenance tasks.",
+      features: ["Same Day Service", "Multi-skill", "Tool Provided", "Affordable Rates"]
+    },
+    {
+      id: 17,
+      title: "Professional Babysitting",
+      category: "Babysitter",
+      price: "$15 - $25",
+      rating: 4.8,
+      reviews: 267,
+      location: "Across US",
+      duration: "2-8 hours",
+      image: "👶",
+      description: "Reliable and caring babysitting services for your little ones.",
+      features: ["Background Check", "CPR Certified", "References Available", "Flexible Hours"]
+    },
+    {
+      id: 18,
+      title: "House Sitting Services",
+      category: "House Sitter",
+      price: "$30 - $80",
+      rating: 4.7,
+      reviews: 156,
+      location: "Across US",
+      duration: "1-30 days",
+      image: "🏡",
+      description: "Trusted house sitting services while you're away.",
+      features: ["Pet Care Available", "Plant Watering", "Mail Collection", "Security Check"]
+    },
+    {
+      id: 19,
+      title: "Pool Maintenance Pro",
+      category: "Pool Maintenance",
+      price: "$80 - $200",
+      rating: 4.5,
+      reviews: 198,
+      location: "Across US",
+      duration: "1-3 hours",
+      image: "🏊‍♂️",
+      description: "Complete pool maintenance and cleaning services.",
+      features: ["Chemical Balancing", "Equipment Service", "Weekly Visits", "Emergency Repairs"]
+    },
+    {
+      id: 20,
+      title: "Elderly Care Services",
+      category: "Elderly Care",
+      price: "$20 - $35",
+      rating: 4.9,
+      reviews: 234,
+      location: "Across US",
+      duration: "2-24 hours",
+      image: "👵",
+      description: "Compassionate care and companionship for elderly clients.",
+      features: ["Certified Caregivers", "Meal Preparation", "Transportation", "Medical Assistance"]
+    },
+    {
+      id: 21,
+      title: "Project Supervisor",
+      category: "Project Supervisor",
+      price: "$950 - $1750",
+      rating: 4.7,
+      reviews: 89,
+      location: "Across US",
+      duration: "1-8 hours",
+      image: "👷",
+      description: "Experienced project supervision for construction and renovation works.",
+      features: ["Licensed Professional", "Progress Reports", "Quality Control", "Timeline Management"]
+    },
+    {
+      id: 22,
+      title: "Project Manager",
+      category: "Project Manager",
+      price: "$1000 - $2000 ",
+      rating: 4.8,
+      reviews: 145,
+      location: "Across US",
+      duration: "Ongoing",
+      image: "📋",
+      description: "Professional project management for complex home improvement projects.",
+      features: ["Full Project Oversight", "Vendor Coordination", "Budget Management", "Timeline Planning"]
+    },
+    {
+      id: 23,
+      title: "Private Tutoring",
+      category: "Tutors",
+      price: "$25 - $80",
+      rating: 4.9,
+      reviews: 378,
+      location: "Across US",
+      duration: "1-2 hours",
+      image: "📚",
+      description: "Personalized tutoring services for all ages and subjects.",
+      features: ["Certified Teachers", "All Subjects", "Test Prep", "Online/In-Person"]
     }
   ];
 
@@ -240,13 +345,18 @@ function App() {
   };
 
   const handleContactClick = (serviceName) => {
-    window.location.href = `mailto:hello@gearfify.me?subject=Inquiry about ${serviceName}&body=Hi, I'm interested in learning more about your ${serviceName}. Please contact me with more details.`;
+    window.location.href = `mailto:info@gearfity.me?subject=Inquiry about ${serviceName}&body=Hi, I'm interested in learning more about your ${serviceName}. Please contact me with more details.`;
+  };
+
+  const handleSubscribe = () => {
+    window.location.href = `mailto:info@gearfity.me?subject=Newsletter Subscription&body=Hi, I'd like to subscribe to your newsletter to receive updates about new service opportunities.`;
+    setIsSubscribed(true);
+    setTimeout(() => setIsSubscribed(false), 3000);
   };
 
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);
     setIsDropdownOpen(false);
-    // Expand the selected category
     const newExpanded = new Set([category]);
     setExpandedCategories(newExpanded);
   };
@@ -278,7 +388,7 @@ function App() {
         <h4 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-slate-700 transition-colors">
           {service.title}
         </h4>
-        <p className="text-gray-600 text-sm mb-4 leading-relaxed line-clamp-2">
+        <p className="text-gray-600 text-sm mb-4 leading-relaxed">
           {service.description}
         </p>
         
@@ -341,7 +451,6 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-gray-50 to-stone-50">
       <header className="bg-gradient-to-r from-slate-900 via-gray-900 to-zinc-900 text-white relative overflow-hidden">
-        {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div 
             className="absolute inset-0" 
@@ -356,7 +465,7 @@ function App() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6">
               <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-amber-400 via-yellow-500 to-orange-500 bg-clip-text text-transparent mb-4">
-                Gearfify
+                Gearfity
               </h1>
               <div className="flex flex-wrap justify-center gap-2 mb-6">
                 <span className="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-sm font-medium border border-amber-500/30">
@@ -419,6 +528,37 @@ function App() {
                 </div>
               </div>
             </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
+                <div className="flex items-center justify-center mb-2">
+                  <Activity className="w-5 h-5 text-emerald-400 mr-2" />
+                  <span className="text-2xl font-bold text-white">23</span>
+                </div>
+                <p className="text-gray-300 text-xs">Active Services</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
+                <div className="flex items-center justify-center mb-2">
+                  <Users className="w-5 h-5 text-blue-400 mr-2" />
+                  <span className="text-2xl font-bold text-white">2.5K+</span>
+                </div>
+                <p className="text-gray-300 text-xs">Service Providers</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
+                <div className="flex items-center justify-center mb-2">
+                  <TrendingUp className="w-5 h-5 text-purple-400 mr-2" />
+                  <span className="text-2xl font-bold text-white">15K+</span>
+                </div>
+                <p className="text-gray-300 text-xs">Happy Clients</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
+                <div className="flex items-center justify-center mb-2">
+                  <Award className="w-5 h-5 text-amber-400 mr-2" />
+                  <span className="text-2xl font-bold text-white">4.7</span>
+                </div>
+                <p className="text-gray-300 text-xs">Average Rating</p>
+              </div>
+            </div>
             
             <div className="max-w-2xl mx-auto">
               <p className="text-gray-300 mb-6">
@@ -439,7 +579,6 @@ function App() {
         </div>
       </header>
 
-      {/* Category Dropdown Filter */}
       <div className="bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200 shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col sm:flex-row gap-4 items-center">
@@ -499,16 +638,13 @@ function App() {
           </p>
         </div>
         
-        {/* Category-based Service Listings */}
         <div className="space-y-6">
-          {/* Show selected category first */}
           {(() => {
             const selectedCategoryServices = servicesByCategory[selectedCategory] || [];
             if (selectedCategoryServices.length === 0) return null;
             
             return (
               <div key={selectedCategory} className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
-                {/* Category Header */}
                 <div 
                   className="px-6 py-4 bg-gradient-to-r from-amber-50 to-orange-50 border-b border-gray-200 cursor-pointer hover:from-amber-100 hover:to-orange-100 transition-all"
                   onClick={() => toggleCategoryExpansion(selectedCategory)}
@@ -535,7 +671,6 @@ function App() {
                   </div>
                 </div>
                 
-                {/* Services Grid - Collapsible */}
                 <div className={`transition-all duration-300 ease-in-out ${
                   expandedCategories.has(selectedCategory) 
                     ? 'max-h-none opacity-100' 
@@ -555,14 +690,12 @@ function App() {
             );
           })()}
           
-          {/* Show other categories below */}
           {categories.filter(category => category !== selectedCategory).map(category => {
             const categoryServices = servicesByCategory[category] || [];
             if (categoryServices.length === 0) return null;
             
             return (
               <div key={category} className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
-                {/* Category Header */}
                 <div 
                   className="px-6 py-4 bg-gradient-to-r from-slate-50 to-gray-50 border-b border-gray-200 cursor-pointer hover:from-slate-100 hover:to-gray-100 transition-all"
                   onClick={() => toggleCategoryExpansion(category)}
@@ -586,7 +719,6 @@ function App() {
                   </div>
                 </div>
                 
-                {/* Services Grid - Collapsible */}
                 <div className={`transition-all duration-300 ease-in-out ${
                   expandedCategories.has(category) 
                     ? 'max-h-none opacity-100' 
@@ -621,12 +753,12 @@ function App() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
-                Gearfify
+                Gearfity
               </h3>
               <p className="text-gray-400 mb-4 leading-relaxed">
                 Your trusted platform for connecting skilled service professionals with clients who need quality work done.
               </p>
-              <div className="flex gap-4 text-sm text-gray-400">
+              <div className="flex gap-4 text-sm text-gray-400 mb-4">
                 <span className="flex items-center gap-1">
                   <span className="w-2 h-2 bg-emerald-400 rounded-full"></span>
                   Part-Time Friendly
@@ -635,6 +767,21 @@ function App() {
                   <span className="w-2 h-2 bg-amber-400 rounded-full"></span>
                   Flexible Work
                 </span>
+              </div>
+              
+              <div className="mb-4">
+                <h4 className="font-semibold mb-2 text-white">Stay Updated</h4>
+                <button
+                  onClick={handleSubscribe}
+                  className={`w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white px-4 py-2 rounded-lg font-semibold hover:from-amber-600 hover:to-orange-600 transition-all transform hover:scale-105 shadow-md hover:shadow-lg flex items-center justify-center gap-2 text-sm ${
+                    isSubscribed ? 'from-emerald-500 to-green-500' : ''
+                  }`}
+                  disabled={isSubscribed}
+                >
+                  <Mail className="w-4 h-4" />
+                  {isSubscribed ? 'Subscribed!' : 'Subscribe for  Updates'}
+                </button>
+                <p className="text-gray-500 text-xs mt-1">Get notified about new service opportunities</p>
               </div>
             </div>
             
@@ -663,16 +810,16 @@ function App() {
           
           <div className="text-center border-t border-gray-800 pt-8">
             <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 text-sm text-gray-400 mb-4">
-              <span>© 2024 Gearfify</span>
+              <span>© 2024 Gearfity</span>
               <span className="hidden sm:inline">•</span>
               <span>Privacy Policy</span>
               <span className="hidden sm:inline">•</span>
               <span>Terms of Service</span>
               <span className="hidden sm:inline">•</span>
-              <span>Contact: info@gearfify.me</span>
+              <span>Contact: info@gearfity.me</span>
             </div>
             <p className="text-xs text-gray-500">
-              Start your service business today - Join the growing community of professionals earning more with Gearfify
+              Start your service business today - Join the growing community of professionals earning more with Gearfity
             </p>
           </div>
         </div>
