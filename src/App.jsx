@@ -425,6 +425,110 @@ function App() {
       image: "🐕",
       description: "Professional pet care, walking, and sitting services.",
       features: ["Insured & Bonded", "Regular Updates", "Emergency Contact", "Medication Admin"]
+    },
+    {
+      id: 33,
+      title: "Private Nursing Services",
+      category: "Healthcare",
+      price: "$45 - $75",
+      rating: 4.8,
+      reviews: 156,
+      location: "Across US",
+      duration: "2-12 hours",
+      image: "👩‍⚕️",
+      description: "Professional private nursing care for patients at home.",
+      features: ["Licensed RN/LPN", "Medication Management", "Wound Care", "24/7 Availability"]
+    },
+    {
+      id: 34,
+      title: "Real Estate Services",
+      category: "Real Estate",
+      price: "2.5% - 6%",
+      rating: 4.7,
+      reviews: 289,
+      location: "Across US",
+      duration: "30-90 days",
+      image: "🏘️",
+      description: "Professional real estate agent services for buying and selling properties.",
+      features: ["Market Analysis", "Professional Photos", "Negotiation Expert", "Full Service"]
+    },
+    {
+      id: 35,
+      title: "Home Security Installation",
+      category: "Security",
+      price: "$500 - $2,500",
+      rating: 4.6,
+      reviews: 134,
+      location: "Across US",
+      duration: "4-8 hours",
+      image: "🔒",
+      description: "Professional security system installation and monitoring setup.",
+      features: ["Smart Systems", "24/7 Monitoring", "Mobile App", "Professional Install"]
+    },
+    {
+      id: 36,
+      title: "Financial Planning Services",
+      category: "Financial Services",
+      price: "$150 - $400",
+      rating: 4.8,
+      reviews: 198,
+      location: "Across US",
+      duration: "1-2 hours",
+      image: "💰",
+      description: "Professional financial planning and investment advice.",
+      features: ["Certified CFP", "Retirement Planning", "Investment Strategy", "Tax Planning"]
+    },
+    {
+      id: 37,
+      title: "Tax Preparation Services",
+      category: "Financial Services",
+      price: "$100 - $300",
+      rating: 4.7,
+      reviews: 267,
+      location: "Across US",
+      duration: "1-3 hours",
+      image: "📊",
+      description: "Professional tax preparation and filing services.",
+      features: ["All Tax Forms", "E-filing", "Audit Support", "Year-round Service"]
+    },
+    {
+      id: 38,
+      title: "Legal Consultation",
+      category: "Legal Services",
+      price: "$200 - $500",
+      rating: 4.9,
+      reviews: 145,
+      location: "Across US",
+      duration: "1-2 hours",
+      image: "⚖️",
+      description: "Professional legal consultation and document preparation.",
+      features: ["Licensed Attorney", "All Practice Areas", "Document Review", "Court Representation"]
+    },
+    {
+      id: 39,
+      title: "Personal Training",
+      category: "Fitness",
+      price: "$50 - $120",
+      rating: 4.8,
+      reviews: 234,
+      location: "Across US",
+      duration: "1-2 hours",
+      image: "💪",
+      description: "Professional personal training and fitness coaching.",
+      features: ["Certified Trainer", "Custom Workouts", "Nutrition Guidance", "Progress Tracking"]
+    },
+    {
+      id: 40,
+      title: "Massage Therapy",
+      category: "Wellness",
+      price: "$80 - $150",
+      rating: 4.9,
+      reviews: 189,
+      location: "Across US",
+      duration: "1-2 hours",
+      image: "💆",
+      description: "Professional therapeutic massage services at your location.",
+      features: ["Licensed Therapist", "Various Techniques", "Mobile Service", "Equipment Provided"]
     }
   ];
 
@@ -650,7 +754,7 @@ function App() {
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
                 <div className="flex items-center justify-center mb-2">
                   <Activity className="w-5 h-5 text-emerald-400 mr-2" />
-                  <span className="text-2xl font-bold text-white">32</span>
+                  <span className="text-2xl font-bold text-white">500+</span>
                 </div>
                 <p className="text-gray-300 text-xs">Active Services</p>
               </div>
@@ -711,7 +815,7 @@ function App() {
                 className="w-full flex items-center justify-between px-4 py-3 bg-white border border-gray-300 rounded-xl shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all"
               >
                 <span className="font-medium text-gray-700">
-                  {selectedCategory} ({servicesByCategory[selectedCategory]?.length || 0})
+                  {selectedCategory}
                 </span>
                 <ChevronDown className={`w-5 h-5 text-gray-500 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -729,7 +833,7 @@ function App() {
                       <div className="flex justify-between items-center">
                         <span>{category}</span>
                         <span className="text-sm text-gray-500">
-                          ({servicesByCategory[category]?.length || 0})
+                          {servicesByCategory[category]?.length || 0}
                         </span>
                       </div>
                     </button>
@@ -967,17 +1071,17 @@ function App() {
               <h4 className="font-semibold mb-4 text-amber-400">Popular Categories</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li>• Painting & Home Improvement</li>
-                <li>• Event Services & Photography</li>
-                <li>• Culinary & Catering Services</li>
-                <li>• Pet Care & Personal Services</li>
+                <li>• Healthcare & Private Nursing</li>
+                <li>• Real Estate & Financial Services</li>
                 <li>• Creative & Technical Services</li>
+                <li>• Wellness & Fitness Services</li>
               </ul>
             </div>
           </div>
           
           <div className="text-center border-t border-gray-800 pt-8">
             <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 text-sm text-gray-400 mb-4">
-              <span>© 2024 Gearfity</span>
+              <span>© 2023 Gearfity</span>
               <span className="hidden sm:inline">•</span>
               <span>Privacy Policy</span>
               <span className="hidden sm:inline">•</span>
