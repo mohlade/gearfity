@@ -14,11 +14,10 @@ function App() {
       id: 1,
       title: "Professional House Painting",
       category: "Painting",
-      price: "$500 - $1,200",
       rating: 4.9,
       reviews: 127,
       location: "Across US",
-      duration: "3-5 days",
+      duration: "Weekends",
       image: "🎨",
       description: "Transform your home with premium quality interior and exterior painting services.",
       features: ["Premium Paint", "Color Consultation", "Surface Prep", "Cleanup Included"]
@@ -27,11 +26,10 @@ function App() {
       id: 2,
       title: "Kitchen Renovation",
       category: "Renovation",
-      price: "$15,000 - $35,000",
       rating: 4.8,
       reviews: 89,
       location: "Across US",
-      duration: "2-4 weeks",
+      duration: "Weekends",
       image: "🏠",
       description: "Complete kitchen makeover with modern appliances and custom cabinetry.",
       features: ["Custom Design", "Premium Materials", "Licensed Contractors", "Warranty Included"]
@@ -40,11 +38,10 @@ function App() {
       id: 3,
       title: "Plumbing Repair & Installation",
       category: "Plumbing",
-      price: "$150 - $800",
       rating: 4.7,
       reviews: 203,
       location: "Across US",
-      duration: "2-6 hours",
+      duration: "Weekends",
       image: "🔧",
       description: "Expert plumbing services for repairs, installations, and emergency fixes.",
       features: ["24/7 Emergency", "Licensed Plumber", "Quality Parts", "Satisfaction Guaranteed"]
@@ -53,11 +50,10 @@ function App() {
       id: 4,
       title: "Electrical Services",
       category: "Electrical",
-      price: "$200 - $1,500",
       rating: 4.9,
       reviews: 156,
       location: "Across US",
-      duration: "1-3 days",
+      duration: "Weekends",
       image: "⚡",
       description: "Safe and reliable electrical work by certified electricians.",
       features: ["Code Compliant", "Safety Inspection", "Modern Upgrades", "Emergency Service"]
@@ -66,11 +62,10 @@ function App() {
       id: 5,
       title: "Landscaping & Garden Design",
       category: "Landscaping",
-      price: "$1,200 - $8,500",
       rating: 4.6,
       reviews: 94,
       location: "Across US",
-      duration: "1-2 weeks",
+      duration: "Weekends",
       image: "🌿",
       description: "Beautiful landscape design and maintenance for your outdoor space.",
       features: ["Custom Design", "Native Plants", "Irrigation Setup", "Seasonal Maintenance"]
@@ -79,11 +74,10 @@ function App() {
       id: 6,
       title: "Roofing Services",
       category: "Roofing",
-      price: "$3,000 - $7,000",
       rating: 4.8,
       reviews: 112,
       location: "Across US",
-      duration: "3-7 days",
+      duration: "Weekends",
       image: "🏘️",
       description: "Professional roofing installation, repair, and maintenance services.",
       features: ["Weather Resistant", "Insurance Claims", "Free Inspection", "Long-term Warranty"]
@@ -92,11 +86,10 @@ function App() {
       id: 7,
       title: "HVAC Installation & Repair",
       category: "HVAC",
-      price: "$300 - $6,000",
       rating: 4.7,
       reviews: 178,
       location: "Across US",
-      duration: "4-8 hours",
+      duration: "Weekends",
       image: "❄️",
       description: "Heating, ventilation, and air conditioning services for optimal comfort.",
       features: ["Energy Efficient", "Smart Thermostats", "Regular Maintenance", "Emergency Repairs"]
@@ -105,11 +98,10 @@ function App() {
       id: 8,
       title: "Flooring Installation",
       category: "Flooring",
-      price: "$3,500 - $12,000",
       rating: 4.5,
       reviews: 87,
       location: "Across US",
-      duration: "3-5 days",
+      duration: "Weekends",
       image: "🪵",
       description: "Premium flooring installation including hardwood, tile, and luxury vinyl.",
       features: ["Material Selection", "Professional Install", "Floor Preparation", "Finishing Work"]
@@ -118,11 +110,10 @@ function App() {
       id: 9,
       title: "Bathroom Remodeling",
       category: "Renovation",
-      price: "$8,000 - $20,000",
       rating: 4.9,
       reviews: 145,
       location: "Across US",
-      duration: "1-3 weeks",
+      duration: "Weekends",
       image: "🛁",
       description: "Complete bathroom transformation with modern fixtures and design.",
       features: ["3D Design", "Luxury Fixtures", "Waterproofing", "ADA Compliant"]
@@ -131,11 +122,10 @@ function App() {
       id: 10,
       title: "Window Cleaning & Repair",
       category: "Cleaning",
-      price: "$150 - $600",
       rating: 4.4,
       reviews: 234,
       location: "Across US",
-      duration: "2-4 hours",
+      duration: "Weekends",
       image: "🪟",
       description: "Professional window cleaning and repair services for crystal clear views.",
       features: ["Eco-Friendly", "Screen Cleaning", "Sill Wiping", "Regular Schedule"]
@@ -144,11 +134,10 @@ function App() {
       id: 11,
       title: "Carpentry & Custom Woodwork",
       category: "Carpentry",
-      price: "$500 - $3,000",
       rating: 4.8,
       reviews: 76,
       location: "Across US",
-      duration: "1-2 weeks",
+      duration: "Weekends",
       image: "🪚",
       description: "Custom carpentry work including built-ins, cabinets, and repairs.",
       features: ["Custom Design", "Quality Wood", "Precision Work", "Installation Included"]
@@ -157,11 +146,10 @@ function App() {
       id: 12,
       title: "Pest Control Services",
       category: "Pest Control",
-      price: "$200 - $800",
       rating: 4.6,
       reviews: 198,
       location: "Across US",
-      duration: "1-2 hours",
+      duration: "Weekends",
       image: "🐛",
       description: "Comprehensive pest control and prevention services for your home.",
       features: ["Safe Methods", "Pet Friendly", "Follow-up Service", "Prevention Tips"]
@@ -170,11 +158,10 @@ function App() {
       id: 13,
       title: "Gutter Cleaning & Repair",
       category: "Maintenance",
-      price: "$180 - $500",
       rating: 4.5,
       reviews: 167,
       location: "Across US",
-      duration: "2-4 hours",
+      duration: "Weekends",
       image: "🏠",
       description: "Professional gutter cleaning, repair, and protection services.",
       features: ["Safety First", "Debris Removal", "Leak Repair", "Guard Installation"]
@@ -183,11 +170,10 @@ function App() {
       id: 14,
       title: "Pool Cleaning & Maintenance",
       category: "Pool Service",
-      price: "$120 - $400",
       rating: 4.7,
       reviews: 143,
       location: "Across US",
-      duration: "1-2 hours",
+      duration: "Weekends",
       image: "🏊",
       description: "Complete pool cleaning and maintenance services for crystal clear water.",
       features: ["Chemical Balance", "Equipment Check", "Weekly Service", "Seasonal Opening"]
@@ -196,11 +182,10 @@ function App() {
       id: 15,
       title: "Moving & Relocation Services",
       category: "Moving",
-      price: "$400 - $2,500",
       rating: 4.3,
       reviews: 189,
       location: "Across US",
-      duration: "4-8 hours",
+      duration: "Weekends",
       image: "📦",
       description: "Professional moving services with careful handling of your belongings.",
       features: ["Packing Service", "Insurance Coverage", "Local & Long Distance", "Storage Options"]
@@ -209,11 +194,10 @@ function App() {
       id: 16,
       title: "Handyman Services",
       category: "Handyman",
-      price: "$50 - $120",
       rating: 4.6,
       reviews: 312,
       location: "Across US",
-      duration: "1-4 hours",
+      duration: "Weekends",
       image: "🔨",
       description: "General repairs, installations, and home maintenance tasks.",
       features: ["Same Day Service", "Multi-skill", "Tool Provided", "Affordable Rates"]
@@ -222,11 +206,10 @@ function App() {
       id: 17,
       title: "Professional Babysitting",
       category: "Babysitter",
-      price: "$15 - $25",
       rating: 4.8,
       reviews: 267,
       location: "Across US",
-      duration: "2-8 hours",
+      duration: "Weekends",
       image: "👶",
       description: "Reliable and caring babysitting services for your little ones.",
       features: ["Background Check", "CPR Certified", "References Available", "Flexible Hours"]
@@ -235,11 +218,10 @@ function App() {
       id: 18,
       title: "House Sitting Services",
       category: "House Sitter",
-      price: "$30 - $80",
       rating: 4.7,
       reviews: 156,
       location: "Across US",
-      duration: "1-30 days",
+      duration: "Weekends",
       image: "🏡",
       description: "Trusted house sitting services while you're away.",
       features: ["Pet Care Available", "Plant Watering", "Mail Collection", "Security Check"]
@@ -248,11 +230,10 @@ function App() {
       id: 19,
       title: "Pool Maintenance Pro",
       category: "Pool Maintenance",
-      price: "$80 - $200",
       rating: 4.5,
       reviews: 198,
       location: "Across US",
-      duration: "1-3 hours",
+      duration: "Weekends",
       image: "🏊‍♂️",
       description: "Complete pool maintenance and cleaning services.",
       features: ["Chemical Balancing", "Equipment Service", "Weekly Visits", "Emergency Repairs"]
@@ -261,11 +242,10 @@ function App() {
       id: 20,
       title: "Elderly Care Services",
       category: "Elderly Care",
-      price: "$20 - $35",
       rating: 4.9,
       reviews: 234,
       location: "Across US",
-      duration: "2-24 hours",
+      duration: "Weekends",
       image: "👵",
       description: "Compassionate care and companionship for elderly clients.",
       features: ["Certified Caregivers", "Meal Preparation", "Transportation", "Medical Assistance"]
@@ -274,11 +254,10 @@ function App() {
       id: 21,
       title: "Project Supervisor",
       category: "Project Supervisor",
-      price: "$950 - $1750",
       rating: 4.7,
       reviews: 89,
       location: "Across US",
-      duration: "1-8 hours",
+      duration: "Weekends",
       image: "👷",
       description: "Experienced project supervision for construction and renovation works.",
       features: ["Licensed Professional", "Progress Reports", "Quality Control", "Timeline Management"]
@@ -287,11 +266,10 @@ function App() {
       id: 22,
       title: "Project Manager",
       category: "Project Manager",
-      price: "$1000 - $2000 ",
       rating: 4.8,
       reviews: 145,
       location: "Across US",
-      duration: "Ongoing",
+      duration: "Weekends",
       image: "📋",
       description: "Professional project management for complex home improvement projects.",
       features: ["Full Project Oversight", "Vendor Coordination", "Budget Management", "Timeline Planning"]
@@ -300,11 +278,10 @@ function App() {
       id: 23,
       title: "Private Tutoring",
       category: "Tutors",
-      price: "$25 - $80",
       rating: 4.9,
       reviews: 378,
       location: "Across US",
-      duration: "1-2 hours",
+      duration: "Weekends",
       image: "📚",
       description: "Personalized tutoring services for all ages and subjects.",
       features: ["Certified Teachers", "All Subjects", "Test Prep", "Online/In-Person"]
@@ -313,11 +290,10 @@ function App() {
       id: 24,
       title: "Wedding Photography",
       category: "Event Services",
-      price: "$1,200 - $3,500",
       rating: 4.9,
       reviews: 167,
       location: "Across US",
-      duration: "8-12 hours",
+      duration: "Weekends",
       image: "📸",
       description: "Professional wedding photography capturing your special moments.",
       features: ["Full Day Coverage", "Edited Photos", "Online Gallery", "Print Package"]
@@ -326,11 +302,10 @@ function App() {
       id: 25,
       title: "Event Cinematography",
       category: "Event Services",
-      price: "$1,500 - $4,000",
       rating: 4.8,
       reviews: 134,
       location: "Across US",
-      duration: "8-12 hours",
+      duration: "Weekends",
       image: "🎬",
       description: "Cinematic video production for weddings and special events.",
       features: ["4K Recording", "Professional Edit", "Drone Footage", "Highlight Reel"]
@@ -339,11 +314,10 @@ function App() {
       id: 26,
       title: "Stage Manager",
       category: "Event Services",
-      price: "$300 - $800",
       rating: 4.7,
       reviews: 89,
       location: "Across US",
-      duration: "4-10 hours",
+      duration: "Weekends",
       image: "🎭",
       description: "Professional stage management for events, shows, and productions.",
       features: ["Event Coordination", "Technical Oversight", "Schedule Management", "Team Leadership"]
@@ -352,11 +326,10 @@ function App() {
       id: 27,
       title: "Personal Chef Services",
       category: "Culinary Services",
-      price: "$80 - $200",
       rating: 4.8,
       reviews: 203,
       location: "Across US",
-      duration: "2-4 hours",
+      duration: "Weekends",
       image: "👨‍🍳",
       description: "Professional chef services for private dining and meal preparation.",
       features: ["Custom Menus", "Fresh Ingredients", "Special Diets", "Cleanup Included"]
@@ -365,11 +338,10 @@ function App() {
       id: 28,
       title: "Custom Baking Services",
       category: "Culinary Services",
-      price: "$25 - $150",
       rating: 4.9,
       reviews: 278,
       location: "Across US",
-      duration: "2-6 hours",
+      duration: "Weekends",
       image: "🧁",
       description: "Professional baking services for special occasions and events.",
       features: ["Custom Designs", "Fresh Ingredients", "Dietary Options", "Delivery Available"]
@@ -378,11 +350,10 @@ function App() {
       id: 29,
       title: "Professional Dance Instruction",
       category: "Entertainment",
-      price: "$40 - $120",
       rating: 4.7,
       reviews: 156,
       location: "Across US",
-      duration: "1-2 hours",
+      duration: "Weekends",
       image: "💃",
       description: "Dance lessons and choreography for individuals and groups.",
       features: ["All Skill Levels", "Various Styles", "Group Classes", "Private Lessons"]
@@ -391,11 +362,10 @@ function App() {
       id: 30,
       title: "Video Editing Services",
       category: "Creative Services",
-      price: "$50 - $150",
       rating: 4.8,
       reviews: 192,
       location: "Across US",
-      duration: "2-8 hours",
+      duration: "Weekends",
       image: "🎞️",
       description: "Professional video editing for personal and business content.",
       features: ["Professional Software", "Color Correction", "Audio Sync", "Quick Turnaround"]
@@ -404,11 +374,10 @@ function App() {
       id: 31,
       title: "Auto Repair & Maintenance",
       category: "Automotive",
-      price: "$75 - $300",
       rating: 4.6,
       reviews: 234,
       location: "Across US",
-      duration: "1-4 hours",
+      duration: "Weekends",
       image: "🔧",
       description: "Professional automotive repair and maintenance services.",
       features: ["Certified Mechanic", "Quality Parts", "Mobile Service", "Warranty Included"]
@@ -417,11 +386,10 @@ function App() {
       id: 32,
       title: "Pet Care & Sitting",
       category: "Pet Services",
-      price: "$20 - $60",
       rating: 4.9,
       reviews: 345,
       location: "Across US",
-      duration: "2-24 hours",
+      duration: "Weekends",
       image: "🐕",
       description: "Professional pet care, walking, and sitting services.",
       features: ["Insured & Bonded", "Regular Updates", "Emergency Contact", "Medication Admin"]
@@ -430,11 +398,10 @@ function App() {
       id: 33,
       title: "Private Nursing Services",
       category: "Healthcare",
-      price: "$45 - $75",
       rating: 4.8,
       reviews: 156,
       location: "Across US",
-      duration: "2-12 hours",
+      duration: "Weekends",
       image: "👩‍⚕️",
       description: "Professional private nursing care for patients at home.",
       features: ["Licensed RN/LPN", "Medication Management", "Wound Care", "24/7 Availability"]
@@ -443,11 +410,10 @@ function App() {
       id: 34,
       title: "Real Estate Services",
       category: "Real Estate",
-      price: "2.5% - 6%",
       rating: 4.7,
       reviews: 289,
       location: "Across US",
-      duration: "30-90 days",
+      duration: "Weekends",
       image: "🏘️",
       description: "Professional real estate agent services for buying and selling properties.",
       features: ["Market Analysis", "Professional Photos", "Negotiation Expert", "Full Service"]
@@ -456,11 +422,10 @@ function App() {
       id: 35,
       title: "Home Security Installation",
       category: "Security",
-      price: "$500 - $2,500",
       rating: 4.6,
       reviews: 134,
       location: "Across US",
-      duration: "4-8 hours",
+      duration: "Weekends",
       image: "🔒",
       description: "Professional security system installation and monitoring setup.",
       features: ["Smart Systems", "24/7 Monitoring", "Mobile App", "Professional Install"]
@@ -469,11 +434,10 @@ function App() {
       id: 36,
       title: "Financial Planning Services",
       category: "Financial Services",
-      price: "$150 - $400",
       rating: 4.8,
       reviews: 198,
       location: "Across US",
-      duration: "1-2 hours",
+      duration: "Weekends",
       image: "💰",
       description: "Professional financial planning and investment advice.",
       features: ["Certified CFP", "Retirement Planning", "Investment Strategy", "Tax Planning"]
@@ -482,11 +446,10 @@ function App() {
       id: 37,
       title: "Tax Preparation Services",
       category: "Financial Services",
-      price: "$100 - $300",
       rating: 4.7,
       reviews: 267,
       location: "Across US",
-      duration: "1-3 hours",
+      duration: "Weekends",
       image: "📊",
       description: "Professional tax preparation and filing services.",
       features: ["All Tax Forms", "E-filing", "Audit Support", "Year-round Service"]
@@ -495,11 +458,10 @@ function App() {
       id: 38,
       title: "Legal Consultation",
       category: "Legal Services",
-      price: "$200 - $500",
       rating: 4.9,
       reviews: 145,
       location: "Across US",
-      duration: "1-2 hours",
+      duration: "Weekends",
       image: "⚖️",
       description: "Professional legal consultation and document preparation.",
       features: ["Licensed Attorney", "All Practice Areas", "Document Review", "Court Representation"]
@@ -508,11 +470,10 @@ function App() {
       id: 39,
       title: "Personal Training",
       category: "Fitness",
-      price: "$50 - $120",
       rating: 4.8,
       reviews: 234,
       location: "Across US",
-      duration: "1-2 hours",
+      duration: "Weekends",
       image: "💪",
       description: "Professional personal training and fitness coaching.",
       features: ["Certified Trainer", "Custom Workouts", "Nutrition Guidance", "Progress Tracking"]
@@ -521,11 +482,10 @@ function App() {
       id: 40,
       title: "Massage Therapy",
       category: "Wellness",
-      price: "$80 - $150",
       rating: 4.9,
       reviews: 189,
       location: "Across US",
-      duration: "1-2 hours",
+      duration: "Weekends",
       image: "💆",
       description: "Professional therapeutic massage services at your location.",
       features: ["Licensed Therapist", "Various Techniques", "Mobile Service", "Equipment Provided"]
@@ -566,11 +526,11 @@ function App() {
   };
 
   const handleContactClick = (serviceName) => {
-    window.location.href = `mailto:hello@gearfity.me?subject=Inquiry about ${serviceName}&body=Hi, I'm interested in learning more about your ${serviceName}. Please contact me with more details.`;
+    window.location.href = `mailto:jobs@gearfity.me?subject=Inquiry about ${serviceName}&body=Hi, I'm interested in learning more about your ${serviceName}. Please contact me with more details.`;
   };
 
   const handleSubscribe = () => {
-    window.location.href = `mailto:info@gearfity.me?subject=Newsletter Subscription&body=Hi, I'd like to subscribe to your newsletter to receive updates about new service opportunities.`;
+    window.location.href = `mailto:support@gearfity.me?subject=Newsletter Subscription&body=Hi, I'd like to subscribe to your newsletter to receive updates about new service opportunities.`;
     setIsSubscribed(true);
     setTimeout(() => setIsSubscribed(false), 3000);
   };
@@ -652,19 +612,13 @@ function App() {
       </div>
       
       <div className="px-5 py-4 bg-white border-t border-gray-200">
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
-          <div>
-            <span className="text-lg font-bold text-slate-800 block">{service.price}</span>
-            <span className="text-xs text-gray-500">per project</span>
-          </div>
-          <button
-            onClick={() => handleContactClick(service.title)}
-            className="w-full sm:w-auto bg-gradient-to-r from-slate-700 to-gray-800 text-white px-4 py-2 rounded-lg font-semibold hover:from-slate-800 hover:to-gray-900 transition-all transform hover:scale-105 shadow-md hover:shadow-lg flex items-center justify-center gap-2 text-sm"
-          >
-            <Mail className="w-4 h-4" />
-            Contact
-          </button>
-        </div>
+        <button
+          onClick={() => handleContactClick(service.title)}
+          className="w-full bg-gradient-to-r from-slate-700 to-gray-800 text-white px-4 py-2 rounded-lg font-semibold hover:from-slate-800 hover:to-gray-900 transition-all transform hover:scale-105 shadow-md hover:shadow-lg flex items-center justify-center gap-2 text-sm"
+        >
+          <Mail className="w-4 h-4" />
+          Contact
+        </button>
       </div>
     </div>
   );
